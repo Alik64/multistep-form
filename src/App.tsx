@@ -1,10 +1,11 @@
 import "./App.css";
+import Sidebar from "./components/sidebar/Sidebar";
 
 const App = () => {
   return (
     <main className="content">
       <div>
-        <aside></aside>
+       <Sidebar/>
 
         <section>
           <div></div>
