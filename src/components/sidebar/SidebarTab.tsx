@@ -1,14 +1,17 @@
 import React from "react";
+import { useFormStore } from "../../store/store";
 
 type Props = {
-  step: number;
+  stepNumber: number;
   title: string;
 };
 
-const SidebarTab = ({ step, title }: Props) => {
+const SidebarTab = ({ stepNumber, title }: Props) => {
+  const step = useFormStore((state) => state.step);
+  const setStep = useFormStore((state) => state.setStep);
   return (
-    <div>
-      <div>{step}</div>
+    <div onClick={() => setStep(stepNumber)}>
+      <div className={step === stepNumber ? "active" : "default"}>{stepNumber}</div>
       <div>{title}</div>
     </div>
   );
