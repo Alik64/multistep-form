@@ -8,19 +8,19 @@ const App = () => {
   const step = useFormStore((state) => state.step);
   
   return (
-    <main className="content">
-      <div>{step}</div>
-      <div>
+    <main className="main">
+
+      <div className="main-container">
         <Sidebar />
 
         <section>
-          <div></div>
           <section></section>
           <div>
             <button onClick={decreaseStep}>Go back</button>
-            <button onClick={increaseStep}>Next</button>
+            <button onClick={increaseStep}>Next Step</button>
           </div>
         </section>
+      
       </div>
     </main>
   );

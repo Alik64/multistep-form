@@ -1,8 +1,7 @@
-import React from "react";
 import SidebarTab from "./SidebarTab";
+import s from "./Sidebar.module.css";
 
-const Sidebar = () => {
-  const sidebarInfo = [
+const SIDEBAR_INFO = [
     {
       step: 1,
       title: "Your Info",
@@ -20,10 +19,12 @@ const Sidebar = () => {
       title: "Summary",
     },
   ];
+const Sidebar = () => {
+  
   return (
-    <div>
-      {sidebarInfo.map((sidebar) => (
-        <SidebarTab stepNumber={sidebar.step} title={sidebar.title} />
+    <div className={s.sidebar}>
+      {SIDEBAR_INFO.map((sidebar) => (
+        <SidebarTab stepNumber={sidebar.step} title={sidebar.title} key={sidebar.step} />
       ))}
     </div>
   );
