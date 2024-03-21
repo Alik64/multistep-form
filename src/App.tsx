@@ -1,11 +1,21 @@
-import './App.css';
+import "./App.css";
 
 const App = () => {
   return (
-    <div className="content">
-      <h1>Rsbuild with React</h1>
-      <p>Start building amazing things with Rsbuild.</p>
-    </div>
+    <main className="content">
+      <div>
+        <aside></aside>
+
+        <section>
+          <div></div>
+          <section></section>
+          <div>
+            <button>Go back</button>
+            <button>Next</button>
+          </div>
+        </section>
+      </div>
+    </main>
   );
 };
 
