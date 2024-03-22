@@ -1,0 +1,47 @@
+.sidebar {
+  width: 274px;
+  height: 568px;
+  background: url("../../assets/images/bg-sidebar-desktop.svg");
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+.sidebarTab {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+.stepNumber {
+  width: 30px;
+  height: 30px;
+  font-weight: 400;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid var(--white);
+}
+.sidebarTab_info {
+  margin-left: 1rem;
+  text-transform: uppercase; 
+}
+.sidebarTab_info > div:first-child {
+    color: var(--cool-gray);
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.sidebarTab_title{
+    color: var(--white);
+}
+.active {
+  color: var(--marine-blue);
+  background: var(--light-blue);
+  border-color: var(--light-blue);
+}
