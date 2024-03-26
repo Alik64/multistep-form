@@ -2,6 +2,8 @@ import { FunctionComponent } from "react";
 import "./App.css";
 import Sidebar from "./components/sidebar/Sidebar";
 import { useFormStore } from "./store/store";
+import PersonalInfo from "components/personal-info/PersonalInfo";
+
 
 const App = () => {
   const increaseStep = useFormStore((state) => state.increase);
@@ -11,7 +13,7 @@ const App = () => {
     [key: number]: React.ReactNode; // Using number as key type
   }
   const componentMap: ComponentMap = {
-    1: <div>1</div>,
+    1: <PersonalInfo/>,
     2: <div>2</div>,
     3: <div>3</div>,
     4: <div>4</div>,
